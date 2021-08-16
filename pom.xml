@@ -15,11 +15,17 @@
   </properties>
   
 <distributionManagement>
-       <repository>
-         <id>internal.repo</id>
-         <name>Internal repo</name>
-         <url>file:///var/lib/jenkins/myartifacts/</url>
-       </repository>
+                  <repository>
+                 <id>devopspdm</id>
+                 <url>https://pkgs.dev.azure.com/devopspdm/_packaging/devopspdm/maven/v1</url>
+                <releases>
+                         <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                <enabled>true</enabled>
+                 </snapshots>
+                </repository>
+
 </distributionManagement>
 
   <dependencies>
